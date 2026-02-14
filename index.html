@@ -46,6 +46,7 @@
       <h2 class="section-title">Download Plans</h2>
       <div class="cards">
 
+        <!-- V1 -->
         <div class="card">
           <img src="./v1.png" alt="V1">
           <h3>V1</h3>
@@ -61,6 +62,38 @@
           </button>
         </div>
 
+        <!-- V2 -->
+        <div class="card">
+          <img src="./image.png" alt="V2">
+          <h3>V2</h3>
+          <div class="features">
+            <p><i class="fas fa-database"></i> Local Storage</p>
+            <p><i class="fas fa-server"></i> No Server</p>
+            <p><i class="fas fa-lock-open"></i> No Lock Screen</p>
+            <p><i class="fas fa-shield-alt"></i> Low Security</p>
+          </div>
+          <div class="price">1250</div>
+          <button class="buy-button" data-plan="V2" data-price="1250">
+            <i class="fas fa-download"></i> Download
+          </button>
+        </div>
+
+        <!-- Basic Server -->
+        <div class="card">
+          <img src="./ba.png" alt="Basic Server">
+          <h3>Basic Server</h3>
+          <div class="features">
+            <p><i class="fas fa-server"></i> Server</p>
+            <p><i class="fas fa-lock-open"></i> No Lock Screen</p>
+            <p><i class="fas fa-shield-alt"></i> Low Security</p>
+          </div>
+          <div class="price">1300</div>
+          <button class="buy-button" data-plan="Basic Server" data-price="1300">
+            <i class="fas fa-download"></i> Download
+          </button>
+        </div>
+
+        <!-- Pro -->
         <div class="card">
           <img src="./pro.png" alt="Pro">
           <h3>Pro</h3>
@@ -71,6 +104,22 @@
           </div>
           <div class="price">1900</div>
           <button class="buy-button" data-plan="Pro" data-price="1900">
+            <i class="fas fa-download"></i> Download
+          </button>
+        </div>
+
+        <!-- Ultra -->
+        <div class="card">
+          <img src="./pro.png" alt="Ultra">
+          <h3>Ultra</h3>
+          <div class="features">
+            <p><i class="fas fa-server"></i> Server</p>
+            <p><i class="fas fa-lock"></i> Lock Screen</p>
+            <p><i class="fas fa-user-shield"></i> Admin Accessibility</p>
+            <p><i class="fas fa-shield-alt"></i> High Security</p>
+          </div>
+          <div class="price">2100</div>
+          <button class="buy-button" data-plan="Ultra" data-price="2100">
             <i class="fas fa-download"></i> Download
           </button>
         </div>
@@ -98,7 +147,7 @@
 
   </main>
 
-  <!-- Script for WhatsApp download -->
+  <!-- WhatsApp Button Script -->
   <script>
     const whatsappNumber = "201012139119";
     const buttons = document.querySelectorAll(".buy-button");
