@@ -1,151 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <title>Dentac</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Detanc is Advanced clinic management software">
+    <meta name="description" content="Dentac is an advanced clinic management software">
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo.png">
 
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <title>Dentac</title>
 </head>
 
-<body class="font-sans">
+<body>
 
-    <header class="h-14 w-full flex justify-between items-center px-6 shadow-md">
-        <a href="#main" class="text-2xl font-bold">Dentac</a>
+<header>
+    <a href="#main" class="logo-text">Dentac</a>
 
-        <nav class="flex items-center gap-6 font-bold text-lg">
-            <a href="#dawnlod"
-                class="text-black bg-white flex items-center gap-2 px-3 py-1 rounded-md border">
-                <span>Download</span>
-                <i class="fas fa-download"></i>
-            </a>
-            <a href="#abute">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="#download"><i class="fas fa-download"></i> Download</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <section class="container mx-auto px-6">
+<main class="container">
 
-        <!-- MAIN -->
-        <section id="main" class="flex flex-col items-center text-center py-12">
-            <img src="./logo.png" alt="logo" class="w-40 mb-6">
-            <h1 class="text-3xl font-bold text-blue-600">Dentac</h1>
-            <p class="text-lg font-semibold mt-3">
-                Advanced clinic management software
-            </p>
-        </section>
-
-        <!-- DOWNLOAD -->
-        <section id="dawnlod" class="py-10">
-            <h1 class="text-blue-600 text-2xl font-bold text-center mb-8">Download</h1>
-
-            <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
-
-                <!-- CARD EXAMPLE -->
-                <div class="border p-4 rounded-lg shadow-md text-center">
-                    <img src="./v1.png" alt="v1" class="mx-auto mb-3">
-                    <h1 class="font-bold text-lg">V1</h1>
-
-                    <div class="text-left space-y-1 mt-3 text-sm">
-                        <h2><i class="fas fa-database mr-2 text-blue-500"></i>Local Storage</h2>
-                        <h2><i class="fas fa-server mr-2 text-blue-500"></i>No Server</h2>
-                        <h2><i class="fas fa-lock-open mr-2 text-blue-500"></i>No Lock Screen</h2>
-                        <h2><i class="fas fa-shield-alt mr-2 text-blue-500"></i>Low Security</h2>
-                    </div>
-
-                    <div class="font-bold mt-3">1230</div>
-
-                    <button class="buy-button bg-blue-600 text-white px-4 py-2 rounded mt-3"
-                        data-plan="V1" data-price="1230">
-                        <i class="fas fa-download mr-1"></i>Download
-                    </button>
-                </div>
-
-                <!-- يمكنك تكرار نفس الكارد للباقات الأخرى -->
-                <!-- اختصرتها لتجنب التكرار -->
-
-            </div>
-        </section>
-
-        <!-- ABOUT -->
-        <section id="abute" class="py-10 text-center">
-            <h1 class="text-2xl font-bold mb-4">About</h1>
-            <p>
-                Dentac is a clinic management system made for dental centers.
-                It helps doctors and staff manage patients, appointments, and daily operations.
-            </p>
-            <p class="mt-3">
-                Our goal is to provide simple and reliable software for every clinic size.
-            </p>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact" class="py-10 text-center">
-            <h1 class="text-2xl font-bold mb-4">Contact</h1>
-
-            <div class="flex flex-col items-center gap-3 text-lg">
-
-                <a href="https://wa.me/201012139119" target="_blank"
-                    class="flex items-center gap-2 text-green-600">
-                    <i class="fab fa-whatsapp"></i>
-                    WhatsApp
-                </a>
-
-                <a href="tel:+201012139119"
-                    class="flex items-center gap-2 text-blue-600">
-                    <i class="fas fa-phone"></i>
-                    Phone
-                </a>
-
-                <a href="https://www.facebook.com/share/1GYjhtcsPR/" target="_blank"
-                    class="flex items-center gap-2 text-blue-700">
-                    <i class="fab fa-facebook"></i>
-                    Facebook
-                </a>
-
-                <a href="https://www.linkedin.com/in/عبدالرحمن-احمد-71bb15392" target="_blank"
-                    class="flex items-center gap-2 text-blue-800">
-                    <i class="fab fa-linkedin"></i>
-                    LinkedIn
-                </a>
-
-                <a href="https://abdalrhmanpro-netlify-app.translate.goog/?_x_tr_sl=en&_x_tr_tl=ar&_x_tr_hl=ar&_x_tr_pto=sc"
-                    target="_blank"
-                    class="flex items-center gap-2 text-purple-600">
-                    <i class="fas fa-user"></i>
-                    Portfolio
-                </a>
-
-            </div>
-        </section>
-
+    <!-- Hero -->
+    <section id="main" class="hero">
+        <div class="hero-logo">
+            <img src="./logo.png" alt="Dentac Logo">
+        </div>
+        <div>
+            <h1>Dentac</h1>
+            <p>Advanced clinic management software</p>
+        </div>
     </section>
 
-    <script>
-        const whatsappNumber = "201012139119";
-        const buttons = document.querySelectorAll(".buy-button");
+    <!-- Download -->
+    <section id="download" class="download">
+        <h2 class="section-title">Download Plans</h2>
 
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                const plan = button.dataset.plan;
-                const price = button.dataset.price;
+        <div class="cards">
 
-                const text = encodeURIComponent(`أريد شراء باقة ${plan} بسعر ${price}.`);
-                window.open(`https://wa.me/${whatsappNumber}?text=${text}`, "blank");
-            });
-        });
-    </script>
+            <div class="card">
+                <img src="./v1.png" alt="V1">
+                <h3>V1</h3>
+                <div class="features">
+                    <p><i class="fas fa-database"></i> Local Storage</p>
+                    <p><i class="fas fa-server"></i> No Server</p>
+                    <p><i class="fas fa-lock-open"></i> No Lock Screen</p>
+                    <p><i class="fas fa-shield-alt"></i> Low Security</p>
+                </div>
+                <div class="price">1230</div>
+                <button class="buy-button" data-plan="V1" data-price="1230">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="./pro.png" alt="Pro">
+                <h3>Pro</h3>
+                <div class="features">
+                    <p><i class="fas fa-server"></i> Server</p>
+                    <p><i class="fas fa-lock"></i> Lock Screen</p>
+                    <p><i class="fas fa-shield-alt"></i> High Security</p>
+                </div>
+                <div class="price">1900</div>
+                <button class="buy-button" data-plan="Pro" data-price="1900">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="info">
+        <h2 class="section-title">About</h2>
+        <p>
+            Dentac is a clinic management system designed for dental centers.
+            It helps manage patients, appointments, and daily clinic operations efficiently.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="info">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-links">
+            <a href="https://wa.me/201012139119" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+
+            <a href="tel:+201012139119">
+                <i class="fas fa-phone"></i> Phone
+            </a>
+
+            <a href="https://www.facebook.com/share/1GYjhtcsPR/" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+
+            <a href="https://www.linkedin.com/in/عبدالرحمن-احمد-71bb15392" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+
+            <a href="https://abdalrhmanpro-netlify-app.translate.goog/" target="_blank">
+                <i class="fas fa-user"></i> Portfolio
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<script>
+const whatsappNumber = "201012139119";
+const buttons = document.querySelectorAll(".buy-button");
+
+buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const plan = btn.dataset.plan;
+        const price = btn.dataset.price;
+
+        const text = encodeURIComponent(`أريد شراء باقة ${plan} بسعر ${price}`);
+        window.open(`https://wa.me/${whatsappNumber}?text=${text}`, "_blank");
+    });
+});
+</script>
 
 </body>
-
 </html>
