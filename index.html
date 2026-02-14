@@ -4,131 +4,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="Detanc is Advanced clinic management software">
+    <meta name="description" content="Detanc is Advanced clinic management software">
+
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <meta name="google-site-verification" content="yM3DDBINd5UzgJtut0-dujxJlYCptHH5101R5uKpsGs" />
+
     <title>Dentac</title>
 </head>
 
-<body>
-    <header class="h-14 w-full">
-        <a href="#main" class="p-2 m-2 text-2xl font-bold">Dentac</a>
-        <nav class="p-2 m-2 font-bold text-xl">
-            <a href="#dawnlod" class="text-black bg-white flex  rounded-md"><h1>dawnlod</h1><i class="fa-solid fa-download"></i></a>
-            <a href="#abute">Abute</a>
-            <a href="#contact">contact</a>
+<body class="font-sans">
+
+    <header class="h-14 w-full flex justify-between items-center px-6 shadow-md">
+        <a href="#main" class="text-2xl font-bold">Dentac</a>
+
+        <nav class="flex items-center gap-6 font-bold text-lg">
+            <a href="#dawnlod"
+                class="text-black bg-white flex items-center gap-2 px-3 py-1 rounded-md border">
+                <span>Download</span>
+                <i class="fas fa-download"></i>
+            </a>
+            <a href="#abute">About</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
-    <section class="containe container">
-        <section id="main" class="main">
-            <div class="logo">
-                <img src="./logo.png" alt="logo">
-            </div>
-            <div class="containe">
-                <h1 class="m-7  text-2xl font-bold text-blue-600">dentc</h1>
-                <p class="m-7 text-lg font-bold">Advanced clinic management software</p>
+
+    <section class="container mx-auto px-6">
+
+        <!-- MAIN -->
+        <section id="main" class="flex flex-col items-center text-center py-12">
+            <img src="./logo.png" alt="logo" class="w-40 mb-6">
+            <h1 class="text-3xl font-bold text-blue-600">Dentac</h1>
+            <p class="text-lg font-semibold mt-3">
+                Advanced clinic management software
+            </p>
+        </section>
+
+        <!-- DOWNLOAD -->
+        <section id="dawnlod" class="py-10">
+            <h1 class="text-blue-600 text-2xl font-bold text-center mb-8">Download</h1>
+
+            <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+
+                <!-- CARD EXAMPLE -->
+                <div class="border p-4 rounded-lg shadow-md text-center">
+                    <img src="./v1.png" alt="v1" class="mx-auto mb-3">
+                    <h1 class="font-bold text-lg">V1</h1>
+
+                    <div class="text-left space-y-1 mt-3 text-sm">
+                        <h2><i class="fas fa-database mr-2 text-blue-500"></i>Local Storage</h2>
+                        <h2><i class="fas fa-server mr-2 text-blue-500"></i>No Server</h2>
+                        <h2><i class="fas fa-lock-open mr-2 text-blue-500"></i>No Lock Screen</h2>
+                        <h2><i class="fas fa-shield-alt mr-2 text-blue-500"></i>Low Security</h2>
+                    </div>
+
+                    <div class="font-bold mt-3">1230</div>
+
+                    <button class="buy-button bg-blue-600 text-white px-4 py-2 rounded mt-3"
+                        data-plan="V1" data-price="1230">
+                        <i class="fas fa-download mr-1"></i>Download
+                    </button>
+                </div>
+
+                <!-- يمكنك تكرار نفس الكارد للباقات الأخرى -->
+                <!-- اختصرتها لتجنب التكرار -->
+
             </div>
         </section>
-        <section id="dawnlod" class="dawnlod">
-            <h1 class="text-blue-600  text-2xl font-bold">dawnlod</h1>
-            <section class="flex">
-                <div>
-                    <img src="./v1.png" alt="v1">
-                    <h1 class="titl">v1</h1>
-                    <div class="dis">
-                        <h2>local storeg</h2>
-                        <h2>No servar</h2>
-                        <h2>No lock scren</h2>
-                        <h2>low securty</h2>
-                    </div>
-                    <div class="price">
-                        <h2>1230</h2>
-                    </div>
-                    <button class="buy-button" data-plan="V1" data-price="1230">Download</button>
-                </div>
-                <div>
-                    <img src="./image.png" alt="basc">
-                    <h1 class="titl">V2</h1>
-                    <div class="dis">
-                        <h2>local storeg</h2>
-                        <h2>No servar</h2>
-                        <h2>No lock scren</h2>
-                        <h2>low securty</h2>
-                    </div>
-                    <div class="price">
-                        <h2>1250</h2>
-                    </div>
-                    <button class="buy-button" data-plan="V2" data-price="1250">Download</button>
-                </div>
-                <div>
-                    <img src="./ba.png" alt="">
-                    <h1 class="titl">Basc servar</h1>
-                    <div class="dis">
-                        <h2>servaring</h2>
-                        <h2> servar</h2>
-                        <h2>No lock scren</h2>
-                        <h2>low securty</h2>
-                    </div>
-                    <div class="price">
-                        <h2>1300</h2>
-                    </div>
-                    <button class="buy-button" data-plan="Basc servar" data-price="1300">Download</button>
-                </div>
-                <div>
-                    <img src="./pro.png" alt="pro">
-                    <h1 class="titl">pro</h1>
-                    <div class="dis">
-                        <h2>servaring</h2>
-                        <h2>servar</h2>
-                        <h2>lock scren</h2>
-                        <h2>securty</h2>
-                    </div>
-                    <div class="price">
-                        <h2>1900</h2>
-                    </div>
-                    <button class="buy-button" data-plan="Pro" data-price="1900">Download</button>
-                </div>
-                <div>
-                    <img src="./pro.png" alt="pro">
-                    <h1 class="titl">ultra</h1>
-                    <div class="dis">
-                        <h2>servaring</h2>
-                        <h2>servar</h2>
-                        <h2>lock scren</h2>
-                        <h2>admin acssblty</h2>
-                        <h2>securty</h2>
-                    </div>
-                    <div class="price">
-                        <h2>2100</h2>
-                    </div>
-                    <button class="buy-button" data-plan="Ultra" data-price="2100">Download</button>
-                </div>
-            </section>
-        </section>
-        <section id="abute" class="info-section">
-            <h1 class="section-title">Abute</h1>
+
+        <!-- ABOUT -->
+        <section id="abute" class="py-10 text-center">
+            <h1 class="text-2xl font-bold mb-4">About</h1>
             <p>
                 Dentac is a clinic management system made for dental centers.
                 It helps doctors and staff manage patients, appointments, and daily operations.
             </p>
-            <p>
-                Our goal is to provide a simple and reliable software experience with different plans
-                for every clinic size.
+            <p class="mt-3">
+                Our goal is to provide simple and reliable software for every clinic size.
             </p>
         </section>
-        <section id="contact" class="info-section">
-            <h1 class="section-title">Contact</h1>
-            <p>For purchase and support, contact us using the following:</p>
-            <div class="contact-links">
-                <a href="https://wa.me/201012139119" target="_blank" rel="noopener noreferrer">WhatsApp: +201012139119</a>
-                <a href="tel:+201012139119">Phone: +201012139119</a>
-                
+
+        <!-- CONTACT -->
+        <section id="contact" class="py-10 text-center">
+            <h1 class="text-2xl font-bold mb-4">Contact</h1>
+
+            <div class="flex flex-col items-center gap-3 text-lg">
+
+                <a href="https://wa.me/201012139119" target="_blank"
+                    class="flex items-center gap-2 text-green-600">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+
+                <a href="tel:+201012139119"
+                    class="flex items-center gap-2 text-blue-600">
+                    <i class="fas fa-phone"></i>
+                    Phone
+                </a>
+
+                <a href="https://www.facebook.com/share/1GYjhtcsPR/" target="_blank"
+                    class="flex items-center gap-2 text-blue-700">
+                    <i class="fab fa-facebook"></i>
+                    Facebook
+                </a>
+
+                <a href="https://www.linkedin.com/in/عبدالرحمن-احمد-71bb15392" target="_blank"
+                    class="flex items-center gap-2 text-blue-800">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+
+                <a href="https://abdalrhmanpro-netlify-app.translate.goog/?_x_tr_sl=en&_x_tr_tl=ar&_x_tr_hl=ar&_x_tr_pto=sc"
+                    target="_blank"
+                    class="flex items-center gap-2 text-purple-600">
+                    <i class="fas fa-user"></i>
+                    Portfolio
+                </a>
+
             </div>
         </section>
+
     </section>
+
     <script>
         const whatsappNumber = "201012139119";
         const buttons = document.querySelectorAll(".buy-button");
@@ -137,17 +139,13 @@
             button.addEventListener("click", () => {
                 const plan = button.dataset.plan;
                 const price = button.dataset.price;
-                const approved = window.confirm(`تأكيد شراء باقة ${plan} بسعر ${price}؟`);
-
-                if (!approved) {
-                    return;
-                }
 
                 const text = encodeURIComponent(`أريد شراء باقة ${plan} بسعر ${price}.`);
                 window.open(`https://wa.me/${whatsappNumber}?text=${text}`, "blank");
             });
         });
     </script>
+
 </body>
 
 </html>
